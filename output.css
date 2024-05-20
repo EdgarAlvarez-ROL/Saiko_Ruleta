@@ -677,8 +677,20 @@ video {
   top: 0.75rem;
 }
 
+.top-\[120px\] {
+  top: 120px;
+}
+
 .top-\[86px\] {
   top: 86px;
+}
+
+.top-\[140px\] {
+  top: 140px;
+}
+
+.top-\[130px\] {
+  top: 130px;
 }
 
 .isolate {
@@ -775,8 +787,8 @@ video {
   margin-left: 4rem;
 }
 
-.ml-\[450px\] {
-  margin-left: 450px;
+.ml-\[448px\] {
+  margin-left: 448px;
 }
 
 .ml-auto {
@@ -817,14 +829,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-\[449px\] {
-  margin-left: 449px;
-}
-
-.ml-\[448px\] {
-  margin-left: 448px;
 }
 
 .box-border {
