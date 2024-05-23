@@ -28,3 +28,7 @@ Solo abre la ruta [Abrir SaikoRuleta](https://edgaralvarez-rol.github.io/Saiko_R
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT.
+
+
+### Posdata
+Disculpen que algunas partes del codigo no esten ordenas o bien comentadas xd, luego lo arreglo.
