@@ -1,20 +1,20 @@
 
 
 var num = 0;
-const fraseRec2 = "ACTUALIZALO A DOS";
-const fraseRec2_2 = "ACTUALIZALO A 2";
-const fraseRec3 = "ACTUALIZALO A TRES";
-const fraseRec3_2 = "ACTUALIZALO A 3";
-const fraseRec4 = "ACTUALIZALO A CUATRO";
-const fraseRec4_2 = "ACTUALIZALO A 4";
-const fraseRec5 = "ACTUALIZALO A 5";
-const fraseRec5_2 = "ACTUALIZALO A CINCO";
-const fraseRec6 = "ACTUALIZALO A SEIS";
-const fraseRec6_2 = "ACTUALIZALO A 6";
-const fraseRec7 = "ACTUALIZALO A 7";
-const fraseRec7_2 = "ACTUALIZALO A SIETE";
-const fraseRec8 = "ACTUALIZALO A 8";
-const fraseRec8_2 = "ACTUALIZALO A OCHO";
+const fraseRec2 = "ACTUALÍZALO A DOS";
+const fraseRec2_2 = "ACTUALÍZALO A 2";
+const fraseRec3 = "ACTUALÍZALO A TRES";
+const fraseRec3_2 = "ACTUALÍZALO A 3";
+const fraseRec4 = "ACTUALÍZALO A CUATRO";
+const fraseRec4_2 = "ACTUALÍZALO A 4";
+const fraseRec5 = "ACTUALÍZALO A 5";
+const fraseRec5_2 = "ACTUALÍZALO A CINCO";
+const fraseRec6 = "ACTUALÍZALO A SEIS";
+const fraseRec6_2 = "ACTUALÍZALO A 6";
+const fraseRec7 = "ACTUALÍZALO A 7";
+const fraseRec7_2 = "ACTUALÍZALO A SIETE";
+const fraseRec8 = "ACTUALÍZALO A 8";
+const fraseRec8_2 = "ACTUALÍZALO A OCHO";
 
 const fraseGirar = "JARVIS GIRALA";
 
