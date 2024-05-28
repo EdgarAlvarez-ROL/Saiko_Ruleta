@@ -37,7 +37,7 @@ if (!SpeechRecognition) {
         // Imprimir la transcripción para depuración
         console.log("Transcripción recibida: ", transcript);
 
-        if (transcript === 'JARVIS GÍRALA' || transcript === 'TANIA GÍRALA') {
+        if (transcript === 'JARVIS GÍRALA' || transcript === 'TANIA GÍRALA' || transcript === 'TANIA GÍRALO') {
             console.log("¡Función GIRAR activada!");
             num += 1;
             console.log(num);
