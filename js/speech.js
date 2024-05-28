@@ -16,7 +16,7 @@ const fraseRec7_2 = "ACTUALÍZALO A SIETE";
 const fraseRec8 = "ACTUALÍZALO A 8";
 const fraseRec8_2 = "ACTUALÍZALO A OCHO";
 
-const fraseGirar = "JARVIS GIRALA";
+
 const message_ia_amor = 'YO TAMBIEN TE AMO';
 const audio_ia_amor = new Audio(`https://api.streamelements.com/kappa/v2/speech?voice=Mia&text=${encodeURIComponent(message_ia_amor)}`);
 
@@ -40,10 +40,10 @@ if (!SpeechRecognition) {
         // Imprimir la transcripción para depuración
         console.log("Transcripción recibida: ", transcript);
 
-        if (transcript === 'JARVIS GÍRALA' || transcript === 'TANIA GÍRALA' || transcript === 'TANIA GÍRALO') {
-            console.log("¡Función GIRAR activada!");
-            num += 1;
-            console.log(num);
+        if (transcript === 'JARVIS GÍRALA' || transcript === 'JARVIS GÍRALO' || transcript === 'TANIA GÍRALA' || transcript === 'TANIA GÍRALO') {
+            // console.log("¡Función GIRAR activada!");
+            // num += 1;
+            // console.log(num);
             spin();
             setTimeout(() => {
                 spin();
@@ -69,32 +69,32 @@ if (!SpeechRecognition) {
         // NOTA
         // Cambiar por Switch
         } else if (transcript.includes(fraseRec2)) {
-            console.log("frase 2");
+            // console.log("frase 2");
             document.getElementById("numOptions").value = "2";
             var numOptions = parseInt(document.getElementById("numOptions").value);
             updateOptions();
         } else if (transcript.includes(fraseRec3) || transcript.includes(fraseRec3_2)) {
-            console.log("frase 3");
+            // console.log("frase 3");
             document.getElementById("numOptions").value = "3";
             updateOptions();
         } else if (transcript.includes(fraseRec4) || transcript.includes(fraseRec4_2)) {
-            console.log("frase 4");
+            // console.log("frase 4");
             document.getElementById("numOptions").value = "4";
             updateOptions();
         } else if (transcript.includes(fraseRec5) || transcript.includes(fraseRec5_2)) {
-            console.log("frase 5");
+            // console.log("frase 5");
             document.getElementById("numOptions").value = "5";
             updateOptions();
         } else if (transcript.includes(fraseRec6) || (transcript.includes(fraseRec6_2))) {
-            console.log("frase 6");
+            // console.log("frase 6");
             document.getElementById("numOptions").value = "6";
             updateOptions();
         } else if (transcript.includes(fraseRec7) || transcript.includes(fraseRec7_2)) {
-            console.log("frase 7");
+            // console.log("frase 7");
             document.getElementById("numOptions").value = "7";
             updateOptions();
         } else if (transcript.includes(fraseRec8) || transcript.includes(fraseRec8_2)) {
-            console.log("frase 8");
+            // console.log("frase 8");
             document.getElementById("numOptions").value = "8";
             updateOptions();
         }
