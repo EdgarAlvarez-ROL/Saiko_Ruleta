@@ -649,14 +649,6 @@ video {
   inset: -0.25rem;
 }
 
-.-left-12 {
-  left: -3rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -677,16 +669,12 @@ video {
   top: 0.75rem;
 }
 
-.top-\[86px\] {
-  top: 86px;
-}
-
-.top-\[120px\] {
-  top: 120px;
-}
-
 .top-\[128px\] {
   top: 128px;
+}
+
+.top-\[86px\] {
+  top: 86px;
 }
 
 .isolate {
@@ -942,10 +930,6 @@ video {
   width: 25%;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
 .w-\[150px\] {
   width: 150px;
 }
@@ -1040,6 +1024,26 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .touch-auto {
@@ -2369,10 +2373,6 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -2644,12 +2644,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2658,10 +2652,6 @@ video {
 
 .duration-1000 {
   transition-duration: 1000ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
 }
 
 .ease-in {
