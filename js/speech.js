@@ -17,6 +17,9 @@ const fraseRec8 = "ACTUALÍZALO A 8";
 const fraseRec8_2 = "ACTUALÍZALO A OCHO";
 
 const fraseGirar = "JARVIS GIRALA";
+const message_ia_amor = 'YO TAMBIEN TE AMO';
+const audio_ia_amor = new Audio(`https://api.streamelements.com/kappa/v2/speech?voice=Mia&text=${encodeURIComponent(message_ia_amor)}`);
+
 
 
 // Comprobar si el navegador soporta la API de reconocimiento de voz
@@ -61,6 +64,8 @@ if (!SpeechRecognition) {
         //     updateOptions();
         } else if (transcript === 'JARVIS PONELE PLAY') {
             playVideo();
+        } else if (transcript === "TE AMO") {
+            audio_ia_amor.play();
         // NOTA
         // Cambiar por Switch
         } else if (transcript.includes(fraseRec2)) {
