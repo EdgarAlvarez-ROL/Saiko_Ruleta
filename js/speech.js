@@ -17,9 +17,12 @@ const fraseRec8 = "ACTUALÍZALO A 8";
 const fraseRec8_2 = "ACTUALÍZALO A OCHO";
 
 
-const message_ia_amor = 'YO TAMBIEN TE AMO';
-const audio_ia_amor = new Audio(`https://api.streamelements.com/kappa/v2/speech?voice=Mia&text=${encodeURIComponent(message_ia_amor)}`);
+// const message_ia_amor = 'YO TAMBIEN TE AMO';
+// const audio_ia_amor = new Audio(`https://api.streamelements.com/kappa/v2/speech?voice=Mia&text=${encodeURIComponent(message_ia_amor)}`);
 
+const audioFiles_speech = ["depilate.mp3"];
+const audioSrc_speech = "public/" + audioFiles_speech[0];
+var audio_depilate = document.getElementById("cancion");
 
 
 // Comprobar si el navegador soporta la API de reconocimiento de voz
@@ -60,12 +63,15 @@ if (!SpeechRecognition) {
             setTimeout(() => {
                 spin();
             }, 2400);
-        // } else if (transcript === 'ACTUALIZAR') {
-        //     updateOptions();
+        } else if (transcript === 'REINICIA LA RULETA' || transcript === 'REINÍCIAME LA RULETA') {
+            document.getElementById("numOptions").value = "22";
+            var numOptions = parseInt(document.getElementById("numOptions").value);
+            updateOptions();
         } else if (transcript === 'JARVIS PONELE PLAY') {
             playVideo();
         } else if (transcript === "TE AMO") {
-            audio_ia_amor.play();
+            audio_depilate.src = audioSrc_speech;
+            audio_depilate.play();
         // NOTA
         // Cambiar por Switch
         } else if (transcript.includes(fraseRec2)) {
