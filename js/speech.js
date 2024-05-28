@@ -52,6 +52,8 @@ if (!SpeechRecognition) {
             }, 2400);
         } else if (transcript === 'ACTUALIZAR') {
             updateOptions();
+        } else if (transcript === 'JARVIS PLAY') {
+            playVideo();
         // NOTA
         // Cambiar por Switch
         } else if (transcript.includes(fraseRec2)) {
