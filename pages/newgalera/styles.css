@@ -1,0 +1,120 @@
+body {
+    background-color: #1e1e1e; /* Un tono oscuro más bonito */
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px; /* Ancho del contenedor de imagen */
+    height: 300px; /* Altura del contenedor de imagen */
+    display: flex;
+    align-items: flex-end; /* Alinear el botón en la esquina inferior izquierda */
+    border-radius: 20px;
+    background: #fffbfb;
+  }
+  
+  @media (max-width: 767px) { /* Cambia el valor según tus necesidades para adaptarlo a dispositivos móviles */
+    .image-container {
+      width: 200px;
+      height: 200px;
+    }
+  }  
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que las imágenes se distorsionen */
+    object-position: center 20%;
+    transition: transform 0.4s ease;
+    cursor: zoom-in;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .instagram-link {
+    font-family: system-ui, sans-serif;
+    background: #6b0728;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+  }
+  
+  .instagram-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #5b33b9, #704bb6, #89379e, #b635a0, #b42655, #da2727);
+  }
+  
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .close {
+    color: #FFF;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+  }
+  
+
+  /* BARRA DE DESPLAZAMIENTO */
+  /* Estilos para la barra de desplazamiento en WebKit (Safari, Chrome, Opera) */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: #616161; /* Color del fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  /* Color de la barra por default */
+  background: linear-gradient(45deg, #5b33b9, #704bb6, #89379e, #b635a0, #b42655, #da2727);
+  border-radius: 5px; /* Radio de los bordes de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5a3a3; /* Cambio de color al pasar el mouse sobre la barra de desplazamiento */
+  /* background: linear-gradient(45deg, #5b33b9, #704bb6, #89379e, #b635a0, #b42655, #da2727); */
+}
