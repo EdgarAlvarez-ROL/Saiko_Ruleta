@@ -63,7 +63,7 @@ if (!SpeechRecognition) {
             setTimeout(() => {
                 spin();
             }, 2400);
-        } else if (transcript === 'REINICIA LA RULETA' || transcript === 'REINÍCIAME LA RULETA' || transcript === 'ACTUALÍZALO A 22' || transcript === 'ACTUALÍZALO A VEINTIDOS') {
+        } else if (transcript === 'JARVIS REINICIA LA RULETA' || transcript === 'JARVIS REINÍCIAME LA RULETA' || transcript === 'ACTUALÍZALO A 22' || transcript === 'ACTUALÍZALO A VEINTIDOS') {
             document.getElementById("numOptions").value = "22";
             var numOptions = parseInt(document.getElementById("numOptions").value);
             updateOptions();
