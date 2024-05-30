@@ -1,10 +1,10 @@
 function playVideo() {
   const playButton = document.getElementById("playButton");
-  const audioFiles = ["random_op.mp3"];
+  const audioFiles = ["random_op.mp3", "anime_fin.mp3", "trap_fin.mp3", "rock_fin.mp3"];
   const randomIndex = Math.floor(Math.random() * audioFiles.length);
   const audioSrc = "public/" + audioFiles[randomIndex];
   var audio = document.getElementById("cancion");
-  ajustarVolumen(0.3);
+  // ajustarVolumen(0.9);
 
   if (audio.paused) {
     audio.src = audioSrc;
@@ -19,8 +19,8 @@ function playVideo() {
     playButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="playButton" class="icon icon-tabler icons-tabler-outline icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 4v16l13 -8z" /></svg>';
   });
 
-  function ajustarVolumen(nuevoVolumen) {
-    nuevoVolumen = Math.max(0, Math.min(1, nuevoVolumen));
-    audio.volume = nuevoVolumen;
-  }
+  // function ajustarVolumen(nuevoVolumen) {
+  //   nuevoVolumen = Math.max(0, Math.min(1, nuevoVolumen));
+  //   audio.volume = nuevoVolumen;
+  // }
 }
