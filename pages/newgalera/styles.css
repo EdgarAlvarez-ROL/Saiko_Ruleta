@@ -23,8 +23,8 @@ body {
   
   @media (max-width: 767px) { /* Cambia el valor según tus necesidades para adaptarlo a dispositivos móviles */
     .image-container {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       margin: 5px;
     }
   }  
