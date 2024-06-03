@@ -64,10 +64,10 @@ if (!SpeechRecognition) {
                 spin();
             }, 2400);
         } else if (transcript === 'JARVIS REINICIA LA RULETA' || transcript === 'JARVIS REINÍCIAME LA RULETA' || transcript === 'ACTUALÍZALO A 22' || transcript === 'ACTUALÍZALO A VEINTIDOS') {
-            document.getElementById("numOptions").value = "22";
+            document.getElementById("numOptions").value = "21";
             var numOptions = parseInt(document.getElementById("numOptions").value);
             updateOptions();
-        } else if (transcript === 'JARVIS PONELE PLAY') {
+        } else if (transcript === 'JARVIS PONELE PLAY' || transcript === 'PONELE PLAY') {
             playVideo();
         } else if (transcript === "TE AMO") {
             audio_depilate.src = audioSrc_speech;
