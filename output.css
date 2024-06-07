@@ -937,6 +937,10 @@ video {
   width: 120px;
 }
 
+.w-\[121px\] {
+  width: 121px;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -2875,6 +2879,10 @@ video {
 
   .md\:w-\[210px\] {
     width: 210px;
+  }
+
+  .md\:w-\[211px\] {
+    width: 211px;
   }
 
   .md\:px-8 {

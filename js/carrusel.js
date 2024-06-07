@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Configuración del carrusel
-  const carousel = document.querySelector(".carousel");
+  const carousel = document.querySelector(".carousel1");
   const images = document.querySelectorAll(".carousel-image");
 
   let currentIndex = images.length - 1; // Comenzamos desde la última imagen
