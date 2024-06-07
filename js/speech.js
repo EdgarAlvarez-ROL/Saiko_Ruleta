@@ -1,6 +1,4 @@
-
-
-var num = 0;
+// Frases a reconocer con .includes
 const fraseRec2 = "ACTUALÍZALO A DOS";
 const fraseRec2_2 = "ACTUALÍZALO A 2";
 const fraseRec3 = "ACTUALÍZALO A TRES";
@@ -16,10 +14,18 @@ const fraseRec7_2 = "ACTUALÍZALO A SIETE";
 const fraseRec8 = "ACTUALÍZALO A 8";
 const fraseRec8_2 = "ACTUALÍZALO A OCHO";
 
+const ponelePlay = "PONELE PLAY"
+const ponelePlayTilde = "PÓNELE PLAY"
+const ponelePlayPonle = "PONLE PLAY"
+
+const girar1 = "GÍRALA"
+const girar2 = "GÍRALO"
+
 
 // const message_ia_amor = 'YO TAMBIEN TE AMO';
 // const audio_ia_amor = new Audio(`https://api.streamelements.com/kappa/v2/speech?voice=Mia&text=${encodeURIComponent(message_ia_amor)}`);
 
+// Audio Depilate Trolleo
 const audioFiles_speech = ["depilate.mp3"];
 const audioSrc_speech = "public/" + audioFiles_speech[0];
 var audio_depilate = document.getElementById("cancion");
@@ -43,10 +49,8 @@ if (!SpeechRecognition) {
         // Imprimir la transcripción para depuración
         console.log("Transcripción recibida: ", transcript);
 
-        if (transcript === 'JARVIS GÍRALA' || transcript === 'JARVIS GÍRALO' || transcript === 'TANIA GÍRALA' || transcript === 'TANIA GÍRALO') {
-            // console.log("¡Función GIRAR activada!");
-            // num += 1;
-            // console.log(num);
+        // GIRAR LA RULETA
+        if (transcript.includes(girar1) || transcript.includes(girar2)) {
             spin();
             setTimeout(() => {
                 spin();
@@ -63,15 +67,20 @@ if (!SpeechRecognition) {
             setTimeout(() => {
                 spin();
             }, 2400);
+        // REINICIAR LA RULETA
         } else if (transcript === 'JARVIS REINICIA LA RULETA' || transcript === 'JARVIS REINÍCIAME LA RULETA' || transcript === 'ACTUALÍZALO A 22' || transcript === 'ACTUALÍZALO A VEINTIDOS') {
             document.getElementById("numOptions").value = "21";
             var numOptions = parseInt(document.getElementById("numOptions").value);
             updateOptions();
-        } else if (transcript === 'JARVIS PONELE PLAY' || transcript === 'PONELE PLAY') {
+        // ACTIVAR MUSICA
+        } else if (transcript.includes(ponelePlay) || transcript.includes(ponelePlayTilde) || transcript.includes(ponelePlayPonle)) {
             playVideo();
+        // DEPILATE TROLEO
         } else if (transcript === "TE AMO") {
             audio_depilate.src = audioSrc_speech;
             audio_depilate.play();
+        
+        // ACTUALIZA LA RULETA AL NUMERO ESPECIFICADO
         // NOTA
         // Cambiar por Switch
         } else if (transcript.includes(fraseRec2)) {
