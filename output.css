@@ -1999,6 +1999,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-orange-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 65 12 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2873,8 +2878,8 @@ video {
     width: 50%;
   }
 
-  .md\:w-\[200px\] {
-    width: 200px;
+  .md\:w-\[190px\] {
+    width: 190px;
   }
 
   .md\:px-8 {
