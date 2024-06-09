@@ -76,7 +76,7 @@ if (!SpeechRecognition) {
         } else if (transcript.includes(ponelePlay) || transcript.includes(ponelePlayTilde) || transcript.includes(ponelePlayPonle)) {
             playVideo();
         // DEPILATE TROLEO
-        } else if (transcript === "TE AMO") {
+        } else if (transcript.includes("TE AMO")) {
             audio_depilate.src = audioSrc_speech;
             audio_depilate.play();
         
